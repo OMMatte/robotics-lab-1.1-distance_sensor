@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 
   ros::NodeHandle n;
 
-  ros::Publisher chatter_pub = n.advertise<std_msgs::Float64>("/distance_sensor_test_node/distance", 1000);
+  ros::Publisher chatter_pub = n.advertise<std_msgs::Float64>("distance", 1000);
 
   ros::Rate loop_rate(10);
 
